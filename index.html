@@ -13,105 +13,243 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Ubuntu+Condensed" rel="stylesheet">
+
 </head>
 
 <body>
 
 
     <div class="parallax">
-        <div class=" container name text-center" data-aos="fadeInUp">
+        <div class=" container name text-center" data-aos="fadeInUp" data-aos-duration="3000">
             <h1>Carrie Plank</h1>
-            <p>Web developer, scooter enthusiast, cat person</p>
+            <p id="name-text">Web developer, scooter enthusiast, cat person</p>
         </div>
     </div>
 
     <div class="parallax about-me">
-        <div class="about-me-container" data-aos="fadeInDown">
+        <div class="about-me-container" data-aos="fadeIn">
             <div class="row">
                 <div class="col-md-6">
                     <img class="float-right" id="about-me" src="assets/images/vienna.png">
                 </div>
-                <div class="col-md-6">
-                    <p class="float-right" id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Alias delectus
-                        laborum
-                        provident ullam ipsam repellendus cumque illo! Modi soluta a, et odit delectus veniam porro
-                        quidem
-                        atque possimus commodi tempore.</p>
+                <div class="col-md-6" data-aos="fadeIn" data-aos-easing="linear" data-aos-duration="1500">
+                    <p class="float-left" id="about-me-text">
+                        Skilled communicator and problem solver. Comfortable working with clients, around tight
+                        deadlines, and juggling multiple priorities. Database administrator in a previous life,
+                        currently courting a serious relationship with React. Can design, query, and ask anyone for
+                        money.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="parallax projects">
-        <div class="projects-container">
+        <div class="projects-container" data-aos="fadeIn">
             <div class="row">
-                <div class="col-md-3">
-                    <p class="float-left" id="projects-text">Say some stuff about projects here</p>
+                <div class="col-md-4">
                 </div>
-                <div class="col-md-3">
-                    <img id="project-one" class="float-right" src="assets/images/Todays-Play.PNG">
+                <div class="col-md-4">
+                    <h2 class="text-center">Projects</h2>
                 </div>
-                <div class="col-md-3 float-right">
-                    <img id="project-two" class="float-left" src="assets/images/favIcon.png">
-                </div>
-                <div class="col-md-3">
-
+                <div class="col-md-4">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="projects float-right" data-aos="bounceInDown" style=" width: 18rem;">
+                        <img id="project-one" src="assets/images/Todays-Play.PNG" class="card-img-top" alt="#">
+                        <div class="card-body text-center">
+                            <p class="text-center project-text">Today's Play</p>
+                            <img src="assets/images/GitHub-Mark-64px.png" style="width: 20%;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="projects float-left" data-aos="bounceInDown" style=" width: 18rem;">
+                        <img id="project-two" src="assets/images/favIcon.png" class="card-img-top" alt="#">
+                        <div class="card-body text-center">
+                            <p class="text-center project-text">Instapotty</p>
+                            <img src="assets/images/GitHub-Mark-64px.png" style="width: 20%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="parallax portfolio">
-        <div class="portfolio-container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img id="about-me" src="assets/images/vienna.png">
+    <div class="parallax projects">
+
+        <div class="portfolio-container text-center" data-aos="fadeIn">
+            <h2 class="text-center">Portfolio</h2>
+
+            <div class="card-columns">
+                <div class="card" style=" width: 13rem;">
+
+                    <img src="assets/images/Misty.PNG" class="card-img-top" alt="#">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 text-center">
+                                <img class="add-favs align-center" Title="Check out the repo!"
+                                    src="assets/images/GitHub-Mark-64px.png" style="width: 30px;">
+                                <p class="portfolio-text">Simple Battle Game</p>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus
-                        laborum
-                        provident ullam ipsam repellendus cumque illo! Modi soluta a, et odit delectus veniam porro
-                        quidem
-                        atque possimus commodi tempore.</p>
+
+                <div class="card" style=" width: 13rem;">
+
+                    <img src="assets/images/luther.jpg" class="card-img-top" alt="#">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 text-center">
+                                <img class="add-favs align-center" Title="Check out the repo!"
+                                    src="assets/images/GitHub-Mark-64px.png" style="width: 30px;">
+                                <p class="portfolio-text">Word Game</p>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style=" width: 13rem;">
+
+                    <img src="assets/images/burrito.PNG" class="card-img-top" alt="#">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 text-center">
+                                <img class="add-favs align-center" Title="Check out the repo!"
+                                    src="assets/images/GitHub-Mark-64px.png" style="width: 30px;">
+                                <p class="portfolio-text">Burrito Generator</p>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style=" width: 13rem;">
+
+                    <img src="assets/images/sardonyx.PNG" class="card-img-top" alt="#">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-10 text-center">
+                                <img class="add-favs align-center" Title="Check out the repo!"
+                                    src="assets/images/GitHub-Mark-64px.png" style="width: 30px;">
+                                <p class="portfolio-text">Trivia Game</p>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="parallax education">
+
         <div class="education-container">
+            <h2 class="text-center">Education</h2>
+
             <div class="row">
                 <div class="col-md-6">
-                    <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus
-                        laborum
-                        provident ullam ipsam repellendus cumque illo! Modi soluta a, et odit delectus veniam porro
-                        quidem
-                        atque possimus commodi tempore.</p>
+                    <div class="float-right">
+                        <h3>University of Washington</h3>
+                        <p class="education-text">Certificate</p>
+                        <p class="education-text">Full Stack Web Development</p>
+
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <img id="about-me" src="assets/images/vienna.png">
+                    <div class="float-left">
+                        <img class="education-images" data-aos="heartBeat" src="assets/images/blue-flower.png">
+                    </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="float-right">
+                        <img class="education-images float-right" data-aos="heartBeat"
+                            src="assets/images/orange-flower.png">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="float-left">
+
+                        <h3>University of Washington</h3>
+                        <p class="education-text">Master of Arts</p>
+                        <p class="education-text">Nonprofit Management</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="float-right">
+
+                        <h3>Fort Lewis College</h3>
+                        <p class="education-text">Bachelor of Arts</p>
+                        <p class="education-text">Communications</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="float-left">
+                        <img class="education-images" data-aos="heartBeat" src="assets/images/yellow-flower.png">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <div class="parallax contact-me">
         <div class="contact-me-container">
+            <h2 class="text-center">Find Me!</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <img id="about-me" src="assets/images/vienna.png">
+                <div class="col-md-3">
+                    <img class="social-media" src="assets/images/linkedIn.png">
                 </div>
-                <div class="col-md-6">
-                    <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus
-                        laborum
-                        provident ullam ipsam repellendus cumque illo! Modi soluta a, et odit delectus veniam porro
-                        quidem
-                        atque possimus commodi tempore.</p>
+                <div class="col-md-3">
+                    <img class="social-media" src="assets/images/Octocat.png">
+                </div>
+                <div class="col-md-3">
+                    <img class="social-media" src="assets/images/Twitter.png">
+                </div>
+                <div class="col-md-3">
+                    <img class="social-media" src="assets/images/blog.png">
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
@@ -124,20 +262,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
         AOS.init({
             useClassNames: true,
             initClassName: false,
             animatedClassName: 'animated',
         });
+
     </script>
 </body>
 
