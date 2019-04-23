@@ -1,0 +1,44 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    background-color: transparent; 
+    padding-top: 200px; 
+}
+
+.parallax {
+    background-image: url("images/seattle_view.png");
+    height: 100%;
+    
+    /* Creating the parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    padding: 10px;
+}
+
+img {
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid #ffb2b1;
+}
+
+.about-me-container {
+    background-color: rgba(106, 201, 202, 0.5);
+    background-size: cover;
+   
+}
+
+.projects-container {
+    background-color: rgba(255, 178, 177, 0.5);
+}
+
+#project-two {
+    background-color: rgba(106, 201, 202, 0.5);
+}
