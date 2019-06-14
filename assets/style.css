@@ -26,7 +26,7 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: url(images/CarrieMain.jpg) center no-repeat;
+  background: url(images/seattle_view.jpg) center no-repeat;
   background-size: cover;
 }
 header .content {
@@ -39,6 +39,11 @@ header .content {
 }
 header h1 {
   margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+header h3 {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 header hgroup {
@@ -80,28 +85,28 @@ header .overlay {
   position:relative
 }
 .site a {
-  color: #ffe6ee;
+  color: #80002a;
   text-decoration: none;
 }
 .site a:hover {
-  color: #ffe6ee;
-  text-shadow: 1px 1px 2px black, 0 0 25px maroon, 0 0 5px darkblue;
+  color: #80002a;
+  text-shadow: 1px 1px 2px black, 0 0 25px blueviolet, 0 0 5px pink;
 }
 
 #connect-link {
-  border: 2px solid #ffe6ee;
+  border: 2px solid #80002a;
   margin: 2px; 
 }
 #connect-link:hover {
-  color: #76323F;
-  background: #ffe6ee;
+  color: #ffe6ee;
+  background: #80002a;
   
 }
 .site nav{
   position:absolute;
   top:0;
   left:0;
-  background:#76323F;
+  background: #ffccdd;
   width:100%;
   z-index: 99999;
 }
@@ -112,19 +117,29 @@ header .overlay {
 }
 
 .row {
-    max-width: 100%;
-    margin: 5px;
+    max-width: 90%;
+    margin: 5px auto;
 }
 /* About me section */
 
 .about-me-text {
   color: #ffe6ee;
   font-size: 25px;
+  font-family: 'Hind Guntur', sans-serif;
 }
 
 .resume-text {
   color: #ffe6ee;
   font-size: 23px;
+}
+
+.resume-text a {
+  color: #ffe6ee;
+}
+
+#about-me-pic{
+  border: 6px double #ffe6ee;
+  padding: 10px; 
 }
 
 /* Projets section */
@@ -168,6 +183,19 @@ header .overlay {
   font-size: .8em;
   color: #444;
   position:relative
+}
+
+.connect {
+  padding: 2em 0;
+  text-align: center;
+  font-size: .8em;
+  color: #ffe6ee;
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.connect h2 {
+  border-bottom: 2px solid #ffe6ee;
 }
 
 
