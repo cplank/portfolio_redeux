@@ -81,6 +81,7 @@ header .overlay {
   text-align: center;
   font-size: .8em;
   color: #ffe6ee;
+  font-family: 'Open Sans', sans-serif;
   background-color: rgba(0, 0, 0, 0.2);
   position:relative
 }
@@ -90,7 +91,7 @@ header .overlay {
 }
 .site a:hover {
   color: #80002a;
-  text-shadow: 1px 1px 2px black, 0 0 25px blueviolet, 0 0 5px pink;
+  text-shadow: 1px 1px 2px navy, 0 0 25px blueviolet, 0 0 5px pink;
 }
 
 #connect-link {
@@ -131,6 +132,7 @@ header .overlay {
 .resume-text {
   color: #ffe6ee;
   font-size: 23px;
+  font-family: 'Hind Guntur', sans-serif;
 }
 
 .resume-text a {
@@ -146,8 +148,9 @@ header .overlay {
 .projects {
   padding: 2em 0;
   text-align: center;  
-  font-size: .8em;
+  font-size: .9em;
   color: #ffe6ee;
+  font-family: 'Open Sans', sans-serif;
   position:relative;
   background-color: rgba(0, 0, 0, 0.2);
   
@@ -160,6 +163,12 @@ header .overlay {
 .projects img {
   width: 60%;
   border-radius: 100%;
+  border: 3px double #ffe6ee;
+  padding: 5px;
+  }
+
+  .projects h3 {
+    border: 2px double #ffe6ee; 
   }
 
   /* Portfolio section */
@@ -167,14 +176,19 @@ header .overlay {
 .portfolio {
   padding: 2em 0;
   text-align: center;
-  font-size: .8em;
+  font-size: .9em;
   color: #ffe6ee;
+  font-family: 'Open Sans', sans-serif;
   position:relative;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .portfolio img {
   border-radius: 20%;
+}
+
+#portfolio-links {
+  border: 2px double #ffe6ee; 
 }
 
 .education {
@@ -190,12 +204,45 @@ header .overlay {
   text-align: center;
   font-size: .8em;
   color: #ffe6ee;
+  font-family: 'Open Sans', sans-serif;
   position:relative;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .connect h2 {
   border-bottom: 2px solid #ffe6ee;
+  font-family: 'Open Sans', sans-serif;
 }
 
+.project-hr {
+  border: 1px solid #ffe6ee;
+}
+
+.projects a, .portfolio a {
+  color: #ffe6ee;
+  text-decoration: underline;
+}
+
+.projects a:hover, .portfolio a:hover {
+  text-shadow: 1px 1px 2px navy, 0 0 25px blueviolet, 0 0 5px pink;
+}
+
+.connect img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
