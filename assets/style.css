@@ -15,6 +15,11 @@ html {
 
 body {
   font-size: 1.3em;
+  background: linear-gradient(0deg,rgba(48,48,54,0.3),rgba(0,0,0,0.3)),url(images/background.png);  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -47,7 +52,9 @@ header hgroup {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
+  color: #ffe6ee;
+  border: 3px solid #ffe6ee;
+  background-color: rgba(0, 0, 0, 0.2);
   padding: .5em 3em;
   z-index: 2;
 }
@@ -65,26 +72,36 @@ header .overlay {
 }
 
 .site {
-  padding: 20em 0;
+  padding: 5em 0;
   text-align: center;
-  background-color: #efefef;
   font-size: .8em;
-  color: #444;
+  color: #ffe6ee;
+  background-color: rgba(0, 0, 0, 0.2);
   position:relative
 }
 .site a {
-  color: #666;
+  color: #ffe6ee;
   text-decoration: none;
 }
 .site a:hover {
-  color: #222;
+  color: #ffe6ee;
+  text-shadow: 1px 1px 2px black, 0 0 25px maroon, 0 0 5px darkblue;
 }
 
+#connect-link {
+  border: 2px solid #ffe6ee;
+  margin: 2px; 
+}
+#connect-link:hover {
+  color: #76323F;
+  background: #ffe6ee;
+  
+}
 .site nav{
   position:absolute;
   top:0;
   left:0;
-  background:#222;
+  background:#76323F;
   width:100%;
   z-index: 99999;
 }
@@ -93,35 +110,64 @@ header .overlay {
   font-size:1.3em;
   display:inline-block
 }
-.site nav a:hover{
-  background:#333;
-  color:#fff
-}
 
-/* About me section */
 .row {
     max-width: 100%;
     margin: 5px;
 }
+/* About me section */
 
+.about-me-text {
+  color: #ffe6ee;
+  font-size: 25px;
+}
+
+.resume-text {
+  color: #ffe6ee;
+  font-size: 23px;
+}
+
+/* Projets section */
 .projects {
-    padding: 20em 0;
+  padding: 2em 0;
+  text-align: center;  
+  font-size: .8em;
+  color: #ffe6ee;
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+
+#projects-header, #portfolio-header {
+  border-bottom: 2px solid #ffe6ee;
+}
+
+.projects img {
+  width: 60%;
+  border-radius: 100%;
+  }
+
+  /* Portfolio section */
+
+.portfolio {
+  padding: 2em 0;
   text-align: center;
-  background-color: #efefef;
+  font-size: .8em;
+  color: #ffe6ee;
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio img {
+  border-radius: 20%;
+}
+
+.education {
+  padding: 2em 0;
+  text-align: center;
   font-size: .8em;
   color: #444;
   position:relative
-}
-
-.block {
-  height: 350px;
-  background: rgba(86,61,124,.15);
-  margin-bottom: 30px;
-}
-
-.label {
-  font-size: .85rem;
-  font-weight: bold;
 }
 
 

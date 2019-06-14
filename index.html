@@ -37,8 +37,7 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#education">Education</a>
-            <button class="btn btn-outline-light"><a href="#Connect">Let's Connect!</a></button>
+            <a id="connect-link" href="#connect">Let's Connect!</a>
         </nav>
 
 
@@ -50,22 +49,25 @@
                     <img src="assets/images/Headshot.png" />
                 </div>
                 <div class="col-md-6">
-                    <p>
+                    <p class="about-me-text">
                         Skilled communicator and problem solver. Comfortable working with clients, around tight
                         deadlines, and juggling multiple priorities. Database administrator in a previous life,
                         currently courting a serious relationship with React. Can design, query, and ask anyone for
                         money.
                     </p>
+                    <p class="resume-text">Want to know how I went from fundraiser to developer? <u><a
+                                href="assets/Plank_Resume.pdf" target="_blank">Check out my resume!</a></u></p>
                 </div>
             </div>
         </div>
-    </section>
+        <hr>
 
+    </section>
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="flex-container">
-            <div class="row">
+            <div class="row" id="projects-header">
                 <h2>Projects</h2>
             </div>
             <div class="row">
@@ -132,40 +134,52 @@
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="flex-container">
+            <div class="row" id="portfolio-header">
+                <h2>Other Work</h2>
+            </div>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card-img-top" style="width: 10em">
                         <img src="assets/images/burrito.PNG" />
-                        <p>Burrito Time!</p>
-                        <p>Tracks burritos you've made and eaten.</p>
+                        <div class="card-body">
+                            <p>Burrito Time!</p>
+                            <p>Tracks burritos you've made and eaten.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card-img-top" style="width: 10em">
                         <img src="assets/images/Misty.PNG" />
-                        <p>Simple Battle Game</p>
-                        <p>A Pokemon based fighting game.</p>
+                        <div class="card-body">
+                            <p>Simple Battle Game</p>
+                            <p>A Pokemon based fighting game.</p>
+                        </div>
                     </div>
                 </div>
                 <div class=" col-md-3">
                     <div class="card-img-top" style="width: 10em">
                         <img src="assets/images/sardonyx.PNG" />
-                        <p>Trivia Game</p>
-                        <p>A Steven Universe trivia game.</p>
+                        <div class="card-body">
+                            <p>Trivia Game</p>
+                            <p>A Steven Universe trivia game.</p>
+                        </div>
                     </div>
                 </div>
                 <div class=" col-md-3">
-                    <div class="card-img-top" style="width: 10em">
+                    <div class="card-img-top text-center" style="width: 10em">
                         <img src="assets/images/adora.jpg" />
-                        <p>Memory Game</p>
-                        <p>Don't click on the same She-Ra character twice!</p>
+                        <div class="card-body">
+                            <p>Memory Game</p>
+                            <p>Don't click on the same She-Ra character twice!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="education" id="education">
+    <!-- EDUCATION SECTION -->
+    <!-- <section class="education" id="education">
         <div class="flex-container">
             <div class="row">
                 <div class="col-md-4">
@@ -185,11 +199,11 @@
                 </div>
             </div>
         </div>
+    </section> -->
 
-
-    </section>
-
-    <!-- <div class="contact-me-container">
+    <!-- Let's Connect Section -->
+    <section class="connect" id="connect">
+        <div class="flex-container">
             <h2 class="text-center">Find Me!</h2>
             <div class="row">
                 <div class="col-md-3">
@@ -209,7 +223,11 @@
                         <img class="social-media" src="assets/images/blog.png"></a>
                 </div>
             </div>
-        </div> -->
+        </div>
+    </section>
+
+
+    <!-- Javascript scrolling -->
 
     <script>
         var $content = $('header .content')
@@ -285,6 +303,7 @@
         var scroller = new Scroller();
         scroller.init();
 
+        // Why do I have a horizontal scrollbar!?
         var docWidth = document.documentElement.offsetWidth;
 
         [].forEach.call(
@@ -297,12 +316,6 @@
         );
 
     </script>
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
