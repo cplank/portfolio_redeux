@@ -104,10 +104,6 @@ header .overlay {
     margin: 5px;
 }
 
-#about {
-    margin: 10px;
-}
-
 .projects {
     padding: 20em 0;
   text-align: center;
@@ -116,3 +112,16 @@ header .overlay {
   color: #444;
   position:relative
 }
+
+.block {
+  height: 350px;
+  background: rgba(86,61,124,.15);
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: .85rem;
+  font-weight: bold;
+}
+
+
