@@ -97,6 +97,7 @@ header .overlay {
 #connect-link {
   border: 2px solid #80002a;
   margin: 2px; 
+  border-radius: 20px;
 }
 #connect-link:hover {
   color: #ffe6ee;
@@ -227,11 +228,14 @@ header .overlay {
   text-shadow: 1px 1px 2px navy, 0 0 25px blueviolet, 0 0 5px pink;
 }
 
-.connect img:hover {
+.connect img:hover, .projects img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
+#instapotty-img {
+  background-color: rgba(197, 145, 174, 0.3);
+}
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -246,3 +250,6 @@ header .overlay {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+#projects-link {
+  text-decoration: none;
+}
