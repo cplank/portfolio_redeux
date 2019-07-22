@@ -16,6 +16,9 @@
     <!-- AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+    <!-- Hamburger Menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Hind+Guntur|Noto+Sans+TC&display=swap"
         rel="stylesheet">
@@ -33,22 +36,27 @@
         </div>
         <div class="overlay"></div>
     </header>
-    <section class="site" id="about">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="blog.html">Blog</a>
-            <a id="connect-link" href="#connect">Let's Connect!</a>
-        </nav>
 
 
-        <!-- About Me Section -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="#connect">Let's Connect</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
         <div class="flex-container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/images/headshot_smaller.jpg" style="max-width: 85%;" id="about-me-pic" />
+                    <img src="assets/images/Headshot_Filter.jpg" style="max-width: 85%;" id="about-me-pic" />
                 </div>
                 <div class="col-md-6">
                     <p class="about-me-text">
@@ -112,7 +120,8 @@
                     <h3><a id="projects-link" href="https://instapotty.herokuapp.com/" target="_blank">Instapotty</a>
                     </h3>
                     <p>Full stack web app for sharing fun and interesting pictures of bathrooms. Logged in users can
-                        upload photos, heart their favorite bathrooms, and see which bathrooms are in their favorites
+                        upload photos, heart their favorite bathrooms, and see which bathrooms are in their
+                        favorites
                         list. Uploaded pictures connect to Google Maps so you can always check out your favorite
                         bathroom in person (unless it's a private bathroom, of course!)</p>
                     <p><a href="https://instapotty.herokuapp.com/" target="_blank">See Instapotty in action!</a></p>
@@ -134,15 +143,18 @@
                 <div class="col-md-4">
                     <h3><a id="projects-link" href="https://cplank.github.io/Today-s-Play/" target="_blank">Today's
                             Play</a></h3>
-                    <p>A simple and useful web app for seeing what bands are playing in your area TODAY and listen to
+                    <p>A simple and useful web app for seeing what bands are playing in your area TODAY and listen
+                        to
                         their top hits.</p>
-                    <p><a href="https://cplank.github.io/Today-s-Play/" target="_blank">See Today's Play in action!</a>
+                    <p><a href="https://cplank.github.io/Today-s-Play/" target="_blank">See Today's Play in
+                            action!</a>
                     </p>
                     <p><a href="https://github.com/cplank/Today-s-Play" target="_blank">Check out the code</a></p>
                 </div>
                 <div class="col-md-4">
                     <h3>Role</h3>
-                    <p>Project Manager + Spotify Specialist + Integration (front-back) + Admiral of Authorization</p>
+                    <p>Project Manager + Spotify Specialist + Integration (front-back) + Admiral of Authorization
+                    </p>
                     <hr class="project-hr">
                     <h3>Technologies</h3>
                     <p>Bootstrap, jQuery, AJAX, Ticketmaster widget, Ticketmaster API, Implicit Grant Auth, Spotify
@@ -344,6 +356,17 @@
                 }
             }
         );
+
+        // Hamburger Menu Activate!
+
+        function myFunction() {
+            var x = document.getElementById("navBar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
 
     </script>
 
