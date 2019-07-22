@@ -78,47 +78,65 @@ header {
     -webkit-filter: blur(4px);
   }
   
-  .site {
-    padding: 5em 0;
-    text-align: center;
-    font-size: .8em;
-    color: #ffe6ee;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(0, 0, 0, 0.2);
-    position:relative
-  }
-  .site a {
+  a {
     color: #80002a;
     text-decoration: none;
   }
-  .site a:hover {
+  
+  a:hover {
     color: #80002a;
     text-shadow: 1px 1px 2px navy, 0 0 25px blueviolet, 0 0 5px pink;
   }
+  .topnav {
+    background-color: #ffccdd;
+    overflow: hidden;
+    width: 100%;
+  }
   
-  #connect-link {
-    border: 2px solid #80002a;
-    margin: 2px; 
-    border-radius: 20px;
+  .topnav a {
+    float: left;
+    display: block;
+    color: #80002a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
   }
-  #connect-link:hover {
-    color: #ffe6ee;
-    background: #80002a;
-    
+  
+  .navLinks {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
   }
-  .site nav{
-    position:absolute;
-    top:0;
-    left:0;
-    background: #ffccdd;
-    width:100%;
+  .topnav .icon {
+    display: none;
+  }
+  
+  #myTopnav {
+    overflow: hidden;
     z-index: 99999;
   }
-  .site nav a{
-    padding:10px 30px;
-    font-size:1.3em;
-    display:inline-block
+  
+  #connect-link {
+    background-color: #80002a;
+    color: #ffe6ee;
+    border: 1px solid #ffe6ee;;
   }
+  #connect-link:hover {
+    background-color: #ffe6ee;
+    color:#80002a;
+    border: 1px solid #80002a;
+    
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .section {
+    padding-top: 60px;
+  }
+  
 
   .row {
     max-width: 90%;
