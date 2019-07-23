@@ -48,7 +48,7 @@
             <a href="#portfolio">Portfolio</a>
             <a href="blog.html">Blog</a>
             <a href="#connect" id="connect-link">Let's Connect</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerGo()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
@@ -362,9 +362,8 @@
         );
 
         // Hamburger Menu Activate!
-
-        function myFunction() {
-            var x = document.getElementById("navBar");
+        function hamburgerGo() {
+            var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
             } else {
